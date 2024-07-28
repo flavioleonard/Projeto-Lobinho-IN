@@ -1,5 +1,5 @@
 .cabeca {
-    width: 100vw;
+    width: 1400px;
     height: 130px;
     background-color: cadetblue;
     border: 1px solid black;
@@ -36,8 +36,63 @@
     width: 100%; 
 }
 
-.imagem {
-    border: 1px solid black;
-    width: 100vw;
+.firstDiv {
+    width: 1400px;
     height: 500px;
+    border: 1px solid black;
+}
+
+.imagem {
+    width: 1400px;
+    height: 500px;
+}
+
+.textoFirstDiv {
+    position: absolute;
+    width: 665px;
+    height: 238px;
+    left: 370px;
+    top: 250px;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.textoFirstDiv > h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 130px;
+    text-align: center;
+    color: white;
+}
+
+.textoFirstDiv > p {
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+}
+
+.adoteUmLobinho {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.adoteUmLobinho::after {
+    content: '';
+    position: absolute;
+    left: 250px;
+    bottom: 25px;
+    width: 99px;
+    height: 5px; 
+    background-color: white; 
 }
