@@ -245,3 +245,14 @@ h1 {
     height: 361px;
     border: 1px solid black;
 }
+
+.foot {
+    position: absolute;
+    width: 1400px;
+    height: 275px;
+    left: 0px;
+    top: 2628px;
+
+    background-color: #353535;
+    border: 1px solid black;
+}
