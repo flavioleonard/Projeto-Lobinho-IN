@@ -8,6 +8,23 @@ h1 {
     margin-top: 5px;
 }
 
+.tituloLobos {
+    position: absolute;
+    width: 277px;
+    height: 65px;
+    left: 549px;
+    top: 1618px;
+
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #DEB959;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
 .cabeca {
     width: 1400px;
     height: 130px;
