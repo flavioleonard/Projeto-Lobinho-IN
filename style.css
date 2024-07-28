@@ -305,6 +305,11 @@ h1 {
     top: 37.45%;
     bottom: 57.09%;
     border: 1px solid green;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
 }
 
 .email {
@@ -315,6 +320,11 @@ h1 {
     top: 52%;
     bottom: 42.55%;
     border: 1px solid pink;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
 }
 
 .local > p {
@@ -327,6 +337,36 @@ h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.tel > p {
+    left: 38.64%;
+    right: 52.5%;
+    top: 37.45%;
+    bottom: 57.09%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.email > p {
+    left: 38.64%;
+    right: 48.86%;
+    top: 52%;
+    bottom: 42.55%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
     line-height: 15px;
 
     color: #FFFFFF;
