@@ -1,6 +1,11 @@
 .cabeca {
     width: 100vw;
-    height: 20vh;
+    height: 130px;
     background-color: cadetblue;
     border: 1px solid black;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bolder;
 }
