@@ -241,6 +241,9 @@ h1 {
 }
 
 .secondWolf {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 991px;
     height: 361px;
     border: 1px solid black;
