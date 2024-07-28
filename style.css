@@ -4,13 +4,36 @@
     background-color: cadetblue;
     border: 1px solid black;
 
+    position: relative;
+
     display: flex;
     justify-content: space-evenly;
 }
 
-.cabeca > p {
+.cabeca a { 
+    margin-top: 45px;
+    font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight: bolder;
-    margin-top: 50px;
+    text-decoration: none; 
+    color: var(--cor-letra-1); 
+    padding: 8px 16px; 
+    font-size: 1.75rem; 
+    position: relative; 
+} 
+
+
+ .cabeca a::after { 
+    content: " "; 
+    width: 0%; 
+    height: 3px; 
+    background-color: var(--cor-letra-1); 
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    transition: 0.5s ease-in-out; 
+}
+
+
+ .cabeca a:hover::after { 
+    width: 100%; 
 }
