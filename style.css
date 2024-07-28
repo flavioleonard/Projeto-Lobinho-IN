@@ -160,6 +160,8 @@ footer {
     font-family: "Darker Grotesque", sans-serif;
 }
 
+/* Seção esquerda: mapa, contato e botão "quem somos" */
+
 .secao1-footer {
     display: flex;
     gap: 50px;
@@ -199,6 +201,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* Seção 2: Paw */
 
 .secao2-footer img {
     height: 104px;
