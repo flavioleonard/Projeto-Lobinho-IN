@@ -33,7 +33,7 @@ header a::after {
     background-color: #000;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -6px;
     transition: 0.5s ease-in-out;
 }
 
@@ -81,6 +81,7 @@ h1 {
 input {
     background-color: hsla(0, 0%, 90%, 1);
     border: 1px solid #000;
+    font-size: 1.5rem;
 }
 
 .linha1 {
@@ -97,7 +98,8 @@ label {
     height: 15.6rem;
     resize: none;
     background-color: hsla(0, 0%, 90%, 1);
-    border: 1px solid #000
+    border: 1px solid #000;
+    font-size: 1.5rem;
 }
 
 #link-foto {
@@ -116,6 +118,17 @@ label {
 
 #btn-enviar {
     margin-bottom: 20px;
+    background-color: hsla(210, 49%, 34%, 1);
+    color: #fff;
+    width: 13rem;
+    height: 3.75rem;
+    font-size: 30px;
+    border: 1px solid #000;
+}
+
+#btn-enviar:hover {
+    cursor: pointer;
+    border: 3px solid #000
 }
 
 footer {
