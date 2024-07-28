@@ -180,6 +180,11 @@
     height: 428px;
     left: 219px;
     top: 1073px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .carinho {
@@ -201,4 +206,34 @@
     height: 428px;
     left: 219px;
     top: 1073px;
+}
+
+.tituloProtecao {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.textoProtecao {
+    width: 195px;
+    height: 140px;
+    left: 219px;
+    top: 1361px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
 }
