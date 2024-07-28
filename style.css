@@ -43,9 +43,16 @@ header a:hover::after {
 main {
     height: 65rem;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.box-adocao {
+    width: 60rem;
+    height: 55rem;
+    border: 4px solid hsla(0, 0%, 20%, 1);
+}
 
 footer {
     height: 275px;
