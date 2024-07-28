@@ -260,7 +260,7 @@ h1 {
     border: 1px solid black;
 }
 
-.foot > img {
+.mapa {
     position: absolute;
     left: 15.64%;
     right: 66.5%;
@@ -368,6 +368,31 @@ h1 {
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.patas {
+    position: absolute;
+    left: 76.79%;
+    right: 15.79%;
+    top: 32%;
+    bottom: 30.18%;
+}
+
+h3 {
+    position: absolute;
+    left: 76.14%;
+    right: 15.36%;
+    top: 20.36%;
+    bottom: 70.91%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    flex-wrap: nowrap;
 
     color: #FFFFFF;
 }
