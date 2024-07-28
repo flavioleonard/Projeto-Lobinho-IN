@@ -119,6 +119,7 @@
     font-size: 48px;
     line-height: 65px;
     color: #DEB959;
+    margin-top: 5px;
 }
 
 .secondDiv > p {
@@ -136,4 +137,29 @@
     text-align: center;
 
     color: #FFFFFF;
+}
+
+.thirdDiv {
+    position: absolute;
+    width: 1400px;
+    height: 625px;
+    left: 0px;
+    top: 963px;
+
+    background: #333333;
+
+    display: flex;
+    flex-direction: column; 
+    
+    align-items: center;
+}
+
+.valores {
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #DEB959;
+    margin-top: 5px;
 }
