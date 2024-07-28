@@ -3,9 +3,14 @@
     height: 130px;
     background-color: cadetblue;
     border: 1px solid black;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
-p {
-    font-size: 25px;
+.cabeca > p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
     font-weight: bolder;
+    margin-top: 50px;
 }
