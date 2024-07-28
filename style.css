@@ -71,9 +71,58 @@ h1 {
     font-weight: 600;
 }
 
-img {
+.secao-esquerda {
+    position: relative;
+    margin-left: 10px;
+}
+
+.secao-esquerda::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
     width: 430px;
     height: 328px;
+    background-color: hsla(210, 49%, 34%, 1);
+    z-index: -1;
+}
+
+.secao-esquerda img {
+    width: 430px;
+    height: 328px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.show-lobinho p {
+    width: 480px;
+    height: 480px;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+.botoes button {
+    width: 180px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.botoes button:hover {
+    cursor: pointer;
+}
+
+.adotar {
+    background-color: hsla(86, 50%, 45%, 1);
+}
+
+.excluir {
+    background-color: hsla(0, 67%, 61%, 1);
 }
 
 /* RODAPÉ */
