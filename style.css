@@ -96,3 +96,44 @@
     height: 5px; 
     background-color: white; 
 }
+
+.secondDiv {
+    position: absolute;
+    width: 1400px;
+    height: 333px;
+    left: 0px;
+    top: 630px;
+
+    background-color: #2C5680;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.sobre {
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #DEB959;
+}
+
+.secondDiv > p {
+    
+    width: 960px;
+    height: 166px;
+    left: 220px;
+    top: 740px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
