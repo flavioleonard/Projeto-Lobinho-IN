@@ -290,6 +290,11 @@ h1 {
     top: 20.36%;
     bottom: 42.55%;
     border: 1px solid white;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
 }
 
 .tel {
@@ -299,7 +304,7 @@ h1 {
     right: 52.5%;
     top: 37.45%;
     bottom: 57.09%;
-    border: 1px solid green;;
+    border: 1px solid green;
 }
 
 .email {
@@ -310,4 +315,19 @@ h1 {
     top: 52%;
     bottom: 42.55%;
     border: 1px solid pink;
+}
+
+.local > p {
+    left: 38.64%;
+    right: 36.64%;
+    top: 20.36%;
+    bottom: 68.73%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+
+    color: #FFFFFF;
 }
