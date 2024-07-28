@@ -259,3 +259,11 @@ h1 {
     background-color: #353535;
     border: 1px solid black;
 }
+
+.foot > img {
+    position: absolute;
+    left: 15.64%;
+    right: 66.5%;
+    top: 20.36%;
+    bottom: 18.55%;
+}
