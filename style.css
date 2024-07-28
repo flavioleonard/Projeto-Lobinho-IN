@@ -63,12 +63,14 @@ main {
     display: flex;
     width: 62.5rem;
     height: 33rem;
+    margin-top: 25px;
 }
 
 h1 {
     font-size: 36px;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
+    margin-top: 25px;
 }
 
 .secao-esquerda {
@@ -84,24 +86,26 @@ h1 {
     width: 430px;
     height: 328px;
     background-color: hsla(210, 49%, 34%, 1);
+    border: 3px #000 solid;
     z-index: -1;
 }
 
 .secao-esquerda img {
     width: 430px;
     height: 328px;
+    border: 3px #000 solid;
 }
 
 .botoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .show-lobinho p {
     width: 480px;
     height: 480px;
-    margin-left: 50px;
+    margin-left: 55px;
     font-size: 24px;
 }
 
