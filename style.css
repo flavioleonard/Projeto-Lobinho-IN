@@ -267,3 +267,42 @@ h1 {
     top: 20.36%;
     bottom: 18.55%;
 }
+
+.dados {
+    position: absolute;
+    left: 36.36%;
+    right: 36.64%;
+    top: 20.36%;
+    bottom: 42.55%;
+    border: 1px solid black;
+}
+
+.local {
+    width: 378px;
+    height: 30px;
+    left: 36.36%;
+    right: 36.64%;
+    top: 20.36%;
+    bottom: 42.55%;
+    border: 1px solid white;
+}
+
+.tel {
+    width: 378px;
+    height: 30px;
+    left: 36.57%;
+    right: 52.5%;
+    top: 37.45%;
+    bottom: 57.09%;
+    border: 1px solid green;;
+}
+
+.email {
+    width: 378px;
+    height: 30px;
+    left: 36.5%;
+    right: 48.86%;
+    top: 52%;
+    bottom: 42.55%;
+    border: 1px solid pink;
+}
