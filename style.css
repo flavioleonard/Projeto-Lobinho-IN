@@ -21,7 +21,6 @@
     position: relative; 
 } 
 
-
  .cabeca a::after { 
     content: " "; 
     width: 0%; 
@@ -33,7 +32,12 @@
     transition: 0.5s ease-in-out; 
 }
 
-
  .cabeca a:hover::after { 
     width: 100%; 
+}
+
+.imagem {
+    border: 1px solid black;
+    width: 100vw;
+    height: 500px;
 }
