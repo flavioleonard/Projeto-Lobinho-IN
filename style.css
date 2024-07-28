@@ -19,6 +19,7 @@ header {
 header img {
     width: 95.55px;
     height: 110.72px;
+    margin-right: 50px;
 }
 
 /* Links de navegação header */
@@ -45,6 +46,34 @@ header a::after {
 
 header a:hover::after {
     width: 100%;
+}
+
+/* SEÇÃO SHOW LOBINHO */
+
+main {
+    height: 45.1rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.show-lobinho {
+    display: flex;
+    width: 62.5rem;
+    height: 33rem;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+img {
+    width: 430px;
+    height: 328px;
 }
 
 /* RODAPÉ */
