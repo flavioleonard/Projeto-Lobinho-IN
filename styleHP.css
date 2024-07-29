@@ -9,47 +9,44 @@ h1 {
 }
 
 .cabeca {
+    background-color: hsla(202, 85%, 74%, 1);
     width: 1400px;
     height: 130px;
-    background-color: #85CDF5;
-
-    position: relative;
-
     display: flex;
-    justify-content: space-evenly;
-}
-
-.cabeca a { 
-    margin-top: 45px;
-    font-weight: 700;
-    font-family:  "Darker Grotesque", sans-serif;
-    text-decoration: none; 
-    color: var(--cor-letra-1); 
-    padding: 8px 16px; 
-    font-size: 30px; 
-    line-height: 30px;
-    position: relative; 
-}
-
- .cabeca a::after { 
-    content: " "; 
-    width: 0%; 
-    height: 3px; 
-    background-color: var(--cor-letra-1); 
-    position: absolute; 
-    left: 0; 
-    bottom: -3px; 
-    transition: 0.5s ease-in-out; 
-}
-
- .cabeca a:hover::after { 
-    width: 100%; 
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
 }
 
 .cabeca img {
-    margin-top: 15px;
     width: 95.55px;
-    height: 110.72px; 
+    height: 110.72px;
+}
+
+/* Links de navegação header */
+
+.cabeca a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.87rem;
+    color: #000;
+    position: relative;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+.cabeca a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease-in-out;
+}
+
+.cabeca a:hover::after {
+    width: 100%;
 }
 
 .firstDiv {
