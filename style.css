@@ -197,7 +197,6 @@ footer {
 .secao1-2-footer {
     height: 168px;
     width: 378px;
-    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
