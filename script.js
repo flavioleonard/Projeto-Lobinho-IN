@@ -17,8 +17,7 @@ async function adicionarLobo() {
     let imagem = document.querySelector('#link-foto').value;
     let descricao = document.querySelector('#descricao').value;
 
-    let lobos = JSON.parse(localStorage.getItem('lobos')) || [];
-
+    let lobos = JSON.parse(localStorage.getItem('lobos'));
     let novoId = lobos.length + 1;
 
     let novoLobo = {
