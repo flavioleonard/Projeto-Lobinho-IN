@@ -329,6 +329,20 @@ h1 {
     width: 991px;
     height: 361px;
     border: 1px solid black;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.lobo2 {
+    position: absolute;
+    width: 430px;
+    height: 328px;
+    right: 50px; 
+    z-index: 1;
+    align-self: flex-end;
 }
 
 .foot {
