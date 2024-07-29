@@ -262,6 +262,9 @@ h1 {
 
     background-color: #353535;
     border: 1px solid black;
+
+    border-top: 6px solid;
+    border-image: linear-gradient(to right, hsla(43, 67%, 61%, 1), hsla(210, 49%, 34%, 1)) 1;
 }
 
 .mapa {
