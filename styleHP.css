@@ -241,6 +241,85 @@ h1 {
     width: 991px;
     height: 361px;
     border: 1px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    position: relative;
+}
+
+.quadAzul {
+    width: 430px;
+    height: 328px;
+}
+
+.lobo1 {
+    width: 430px;
+    height: 328px;
+    margin-left: -423px; 
+    z-index: 1;
+    align-self: flex-end;
+}
+
+.boxText1 {
+    width: 461px;
+    height: 339px;
+    left: 710px;
+    top: 1745px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nomeLobo {
+    width: 199px;
+    height: 49px;
+    left: 710px;
+    top: 1745px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 49px;
+
+    border: 1px solid black;
+    color: #000000;
+}
+
+.idadeLobo {
+    width: 110px;
+    height: 27px;
+    left: 710px;
+    top: 1794px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 27px;
+    white-space: nowrap;
+
+    border: 1px solid black;
+    color: #000000;
+}
+
+.descricaoLobo {
+    width: 461px;
+    height: 235px;
+    left: 710px;
+    top: 1849px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    border: 1px solid black;
+    color: #000000;
 }
 
 .secondWolf {
