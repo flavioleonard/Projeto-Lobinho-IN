@@ -28,8 +28,7 @@ h1 {
 .cabeca {
     width: 1400px;
     height: 130px;
-    background-color: cadetblue;
-    border: 1px solid black;
+    background-color: #85CDF5;
 
     position: relative;
 
@@ -40,13 +39,14 @@ h1 {
 .cabeca a { 
     margin-top: 45px;
     font-weight: 700;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  "Darker Grotesque", sans-serif;
     text-decoration: none; 
     color: var(--cor-letra-1); 
     padding: 8px 16px; 
-    font-size: 1.75rem; 
+    font-size: 30px; 
+    line-height: 30px;
     position: relative; 
-} 
+}
 
  .cabeca a::after { 
     content: " "; 
@@ -281,7 +281,6 @@ h1 {
     right: 36.64%;
     top: 20.36%;
     bottom: 42.55%;
-    border: 1px solid black;
 
     display: flex;
     justify-content: space-between;
@@ -296,7 +295,6 @@ h1 {
     right: 36.64%;
     top: 20.36%;
     bottom: 42.55%;
-    border: 1px solid white;
 
     display: flex;
     justify-content: space-between;
@@ -311,10 +309,9 @@ h1 {
     right: 52.5%;
     top: 37.45%;
     bottom: 57.09%;
-    border: 1px solid green;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row; 
     align-items: flex-start;
 }
@@ -326,7 +323,6 @@ h1 {
     right: 48.86%;
     top: 52%;
     bottom: 42.55%;
-    border: 1px solid pink;
 
     display: flex;
     justify-content: space-between;
@@ -340,22 +336,17 @@ h1 {
     top: 20.36%;
     bottom: 68.73%;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Darker Grotesque", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 15px;
 
     color: #FFFFFF;
 }
 
 .tel > p {
-    left: 38.64%;
-    right: 52.5%;
-    top: 37.45%;
-    bottom: 57.09%;
-
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Darker Grotesque", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -365,15 +356,10 @@ h1 {
 }
 
 .email > p {
-    left: 38.64%;
-    right: 48.86%;
-    top: 52%;
-    bottom: 42.55%;
-
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Darker Grotesque", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 15px;
 
     color: #FFFFFF;
@@ -421,7 +407,7 @@ h3 {
     top: 20.36%;
     bottom: 70.91%;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Darker Grotesque", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
