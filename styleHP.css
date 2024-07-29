@@ -8,23 +8,6 @@ h1 {
     margin-top: 5px;
 }
 
-.tituloLobos {
-    position: absolute;
-    width: 277px;
-    height: 65px;
-    left: 500px;
-    top: 1618px;
-
-    font-family:'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 65px;
-    color: #DEB959;
-    margin-top: 5px;
-    white-space: nowrap;
-}
-
 .cabeca {
     width: 1400px;
     height: 130px;
@@ -61,6 +44,12 @@ h1 {
 
  .cabeca a:hover::after { 
     width: 100%; 
+}
+
+.cabeca img {
+    margin-top: 15px;
+    width: 95.55px;
+    height: 110.72px; 
 }
 
 .firstDiv {
@@ -222,6 +211,23 @@ h1 {
     text-align: center;
 
     color: #FFFFFF;
+}
+
+.tituloLobos {
+    position: absolute;
+    width: 277px;
+    height: 65px;
+    left: 500px;
+    top: 1618px;
+
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #DEB959;
+    margin-top: 5px;
+    white-space: nowrap;
 }
 
 .fourthDiv {
