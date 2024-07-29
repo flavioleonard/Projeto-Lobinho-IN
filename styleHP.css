@@ -292,7 +292,7 @@ h1 {
 }
 
 .idadeLobo {
-    width: 110px;
+    width: 150px;
     height: 27px;
     left: 710px;
     top: 1794px;
@@ -343,6 +343,36 @@ h1 {
     right: 50px; 
     z-index: 1;
     align-self: flex-end;
+}
+
+.boxText2 {
+    width: 461px;
+    height: 339px;
+    left: 710px;
+    top: 1745px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.descricaoLobo2 {
+    width: 461px;
+    height: 235px;
+    left: 710px;
+    top: 1849px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    border: 1px solid black;
+    color: #000000;
+
+    text-align: right;
 }
 
 .foot {
