@@ -1,5 +1,4 @@
-//PERSONALIZAR PÁGINA DE ACORDO COM ID DO LOBO
-
+// Personalizar página de acordo com o ID do lobo
 function obterParametroURL(nome) {
     const url = new URL(window.location.href);
     return url.searchParams.get(nome);
@@ -7,7 +6,9 @@ function obterParametroURL(nome) {
 
 function obterDetalhesLobo(id) {
     let lobos = JSON.parse(localStorage.getItem('lobos'));
-    return lobos[id-1];
+    // Converter o id para número antes da comparação
+    let lobo = lobos.find(lobo => lobo.id === parseInt(id, 10));
+    return lobo;
 }
 
 const loboId = obterParametroURL('id');
@@ -27,14 +28,12 @@ showLobinho.innerHTML = `
     <p>${detalhesLobo.descricao}</p>
 </section>`;
 
-
-//DELETANDO LOBO DA LISTA
-
+// Deletar lobo da lista
 function deletarLobo(id) {
     let lobos = JSON.parse(localStorage.getItem('lobos'));
-    lobos = lobos.filter((lobo, index) => index !== id-1);
+    lobos = lobos.filter(lobo => lobo.id !== parseInt(id));
     localStorage.setItem('lobos', JSON.stringify(lobos));
-    alert('Lobo excluido com sucesso!');
+    alert('Lobo excluído com sucesso!');
     window.location.href = '/lista-de-lobinhos';
 }
 
