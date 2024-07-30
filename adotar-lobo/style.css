@@ -1,3 +1,5 @@
+/** GLOBAL **/
+
 * {
     font-family: "Darker Grotesque", sans-serif;
     margin: 0;
@@ -10,6 +12,8 @@ body{
     flex-direction: column;
 
 }
+
+/** CABEÇALHO **/
 
 header {
     background-color: hsla(202, 85%, 74%, 1);
@@ -62,7 +66,6 @@ main {
     align-items: center;
 }
 
-
 .title {
     display: flex;
     gap: 40px
@@ -73,6 +76,8 @@ main {
     height: 200px;
     width: 200px;
 }
+
+/** CLASSE CRIADA NO JS **/
 
 .adote p{
     font-size: 15px;
@@ -89,6 +94,8 @@ h1 {
     font-size: 60px;
     font-weight: 600;
 }
+
+/** DIV COM AS INFOS A SEREM RECEBIDAS **/
 
 .input_container {
     width: 960px;
@@ -107,6 +114,8 @@ h1 {
     font-weight: 600;
     margin-bottom: 15px;
 }
+
+/** RECEPTORES DOS DADOS **/
 
 .name input {
     border: none;
@@ -132,11 +141,15 @@ h1 {
     font-size: 1.5rem;
 }
 
+/** LINHA COM NOME E IDADE **/
+
 .input_container_1 {
     display: flex;
     gap: 10px;
     margin-top: 40px;
 }
+
+/** BOTÃO DE ADOTAR **/
 
 .adotarBtn {
     width: 210px;
@@ -173,10 +186,14 @@ footer {
    
 }
 
+/** SEÇÃO IFRAME, DADOS E BOTÃO **/
+
 .secao1-footer {
     display: flex;
     gap: 50px;
 }
+
+/** CADA INFO. DE CONTATO **/
 
 .inf-contato {
     display: flex;
@@ -213,6 +230,8 @@ footer {
     justify-content: space-between;
 }
 
+/** IMAGEM DE PATA **/
+
 .secao2-footer img {
     height: 104px;
     width: 104px;
@@ -226,6 +245,8 @@ footer {
     gap: 10px;
     justify-content: center;
 }
+
+/** RESPONSIVIDADE FOOTER **/
 
 @media (max-width: 1170px) {
     footer {
