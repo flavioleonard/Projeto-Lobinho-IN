@@ -1,6 +1,10 @@
+/** GLOBAL **/
+
 * {
     font-family: "Darquer Grotesque", sans-serif;
 }
+
+/** HEADE **/
 
 header {
     background-color: hsla(202, 85%, 74%, 1);
@@ -43,6 +47,8 @@ header a:hover::after {
     width: 100%;
 }
 
+/** MAIN **/
+
 main {
     display: flex;
     flex-direction: column;
@@ -68,6 +74,8 @@ main {
     letter-spacing: 0.155em;
 }
 
+/** FOOTER **/
+
 footer {
     height: 275px;
     width: auto;
@@ -81,10 +89,14 @@ footer {
     font-family: "Darker Grotesque", sans-serif;
 }
 
+/** SEÇÃO DO IFRAME, DADOS E BOTÃO **/
+
 .secao1-footer {
     display: flex;
     gap: 50px;
 }
+
+/** CADA DADO DE CONTATO **/
 
 .inf-contato {
     display: flex;
@@ -121,6 +133,8 @@ footer {
     justify-content: space-between;
 }
 
+/** IMAGEM DE PATA **/
+
 .secao2-footer img {
     height: 104px;
     width: 104px;
@@ -134,6 +148,8 @@ footer {
     gap: 10px;
     justify-content: center;
 }
+
+/** RESPONSIVIDADE FOOTER **/
 
 @media (max-width: 1170px) {
     footer {
