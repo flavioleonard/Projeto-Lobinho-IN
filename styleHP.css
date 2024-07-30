@@ -271,7 +271,7 @@ h1 {
     justify-content: space-between;
 }
 
-.nomeLobo {
+.nomeLobo1 {
     width: 199px;
     height: 49px;
     left: 710px;
@@ -280,7 +280,7 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 45px;
     line-height: 49px;
 
     color: #000000;
@@ -294,6 +294,7 @@ h1 {
 
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
+    font-weight: bold;
     font-size: 16px;
     line-height: 27px;
     white-space: nowrap;
@@ -301,7 +302,7 @@ h1 {
     color: #000000;
 }
 
-.descricaoLobo {
+.descricaoLobo1 {
     width: 461px;
     height: 235px;
     left: 710px;
@@ -309,8 +310,9 @@ h1 {
 
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20px;
+    font-weight: bold;
 
     color: #000000;
 }
@@ -357,12 +359,29 @@ h1 {
 
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20px;
+    font-weight: bolder;
 
     color: #000000;
 
     text-align: right;
+}
+
+.nomeLobo2 {
+    width: 199px;
+    height: 49px;
+    left: 710px;
+    top: 1745px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 49px;
+
+    text-align: right;
+    color: #000000;
 }
 
 .foot {
