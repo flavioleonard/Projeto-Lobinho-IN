@@ -2,11 +2,10 @@
 function obterParametroURL(nome) {
     const url = new URL(window.location.href);
     return url.searchParams.get(nome);
-}
+} 
 
 function obterDetalhesLobo(id) {
     let lobos = JSON.parse(localStorage.getItem('lobos'));
-    // Converter o id para número antes da comparação
     let lobo = lobos.find(lobo => lobo.id === parseInt(id, 10));
     return lobo;
 }

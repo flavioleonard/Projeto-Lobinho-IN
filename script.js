@@ -21,3 +21,6 @@ if (!localStorage.getItem('lobos')) {
 } else {
     console.log('LocalStorage já inicializado');
 }
+
+
+
