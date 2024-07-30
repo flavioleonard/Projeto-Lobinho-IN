@@ -1,3 +1,5 @@
+/** GLOBAL **/
+
 h1 {
     font-family:'Courier New', Courier, monospace;
     font-style: normal;
@@ -7,6 +9,25 @@ h1 {
     color: #DEB959;
     margin-top: 5px;
 }
+
+h3 {
+    position: absolute;
+    left: 76.14%;
+    right: 15.36%;
+    top: 20.36%;
+    bottom: 70.91%;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    flex-wrap: nowrap;
+
+    color: #FFFFFF;
+}
+
+/** HEADER **/
 
 .cabeca {
     background-color: hsla(202, 85%, 74%, 1);
@@ -48,6 +69,10 @@ h1 {
 .cabeca a:hover::after {
     width: 100%;
 }
+
+/** INÍCIO DA MAIN **/
+
+/** FIRST DIV : SEÇÃO LOBO DE FUNDO E TEXTO INTRODUTÓRIO **/
 
 .firstDiv {
     width: 1400px;
@@ -110,6 +135,8 @@ h1 {
     background-color: white; 
 }
 
+/** SECOND DIV : SOBRE E TEXTO **/
+
 .secondDiv {
     position: absolute;
     width: 1400px;
@@ -141,6 +168,8 @@ h1 {
     color: #FFFFFF;
 }
 
+/** THIRD DIV : VALORES **/
+
 .thirdDiv {
     position: absolute;
     width: 1400px;
@@ -156,6 +185,8 @@ h1 {
     align-items: center;
 }
 
+/** THIRD DIV : DIV PARA TODOS OS ITENS **/
+
 .itens {
     width: 960px;
     height: 428px;
@@ -167,6 +198,8 @@ h1 {
     flex-direction: row; 
     align-items: center;
 }
+
+/** THIRD DIV : DIV PARA CADA ITEM **/
 
 .eachItem {
     width: 195px;
@@ -210,6 +243,8 @@ h1 {
     color: #FFFFFF;
 }
 
+/** TÍTULO : "LOBO EXEMPLO" **/
+
 .tituloLobos {
     position: absolute;
     width: 277px;
@@ -227,6 +262,8 @@ h1 {
     white-space: nowrap;
 }
 
+/** FOURTH DIV : EXEMPLOS DOS LOBOS **/
+
 .fourthDiv {
     position: absolute;
     width: 1039px;
@@ -234,6 +271,8 @@ h1 {
     left: 180px;
     top: 1723px;
 }
+
+/** FOURTH DIV : PRIMEIRO LOBO EXEMPLO **/
 
 .firstWolf {
     width: 991px;
@@ -247,10 +286,31 @@ h1 {
     position: relative;
 }
 
+
+ /** DIVS PARA OS 2 EXEMPLOS **/
+
+.idadeLobo {
+    width: 150px;
+    height: 27px;
+    left: 710px;
+    top: 1794px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    white-space: nowrap;
+
+    color: #000000;
+}
+
 .quadAzul {
     width: 430px;
     height: 328px;
 }
+
+/** FOURTH DIV : EXCLUSIVO PRIMEIRO LOBO **/
 
 .lobo1 {
     width: 430px;
@@ -286,22 +346,6 @@ h1 {
     color: #000000;
 }
 
-.idadeLobo {
-    width: 150px;
-    height: 27px;
-    left: 710px;
-    top: 1794px;
-
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 27px;
-    white-space: nowrap;
-
-    color: #000000;
-}
-
 .descricaoLobo1 {
     width: 461px;
     height: 235px;
@@ -317,6 +361,8 @@ h1 {
     color: #000000;
 }
 
+/** FOURTH DIV : SEGUNDO LOBO EXEMPLO **/
+
 .secondWolf {
     position: absolute;
     bottom: 0;
@@ -329,6 +375,8 @@ h1 {
     justify-content: space-between;
     gap: 10px;
 }
+
+/** FOURTH DIV : EXCLUSIVO SEGUNDO LOBO **/
 
 .lobo2 {
     position: absolute;
@@ -384,6 +432,10 @@ h1 {
     color: #000000;
 }
 
+/** FIM DA MAIN **/
+
+/** FOOTER **/
+
 .foot {
     position: absolute;
     width: 1400px;
@@ -402,6 +454,8 @@ h1 {
     border-image: linear-gradient(to right, hsla(43, 67%, 61%, 1), hsla(210, 49%, 34%, 1)) 1;
 }
 
+/** IFRAME **/
+
 .mapa {
     position: absolute;
     left: 15.64%;
@@ -409,6 +463,8 @@ h1 {
     top: 20.36%;
     bottom: 18.55%;
 }
+
+/** DIV PARA TODOS OS DADOS **/
 
 .dados {
     position: absolute;
@@ -422,6 +478,8 @@ h1 {
     flex-direction: column; 
     align-items: flex-start;
 }
+
+/** DIV PARA CADA ITEM DO CONTATO **/
 
 .local {
     width: 378px;
@@ -533,21 +591,4 @@ h1 {
 .btn:hover {
     cursor: pointer;
     border: 3px solid #000;
-}
-
-h3 {
-    position: absolute;
-    left: 76.14%;
-    right: 15.36%;
-    top: 20.36%;
-    bottom: 70.91%;
-
-    font-family: "Darker Grotesque", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    flex-wrap: nowrap;
-
-    color: #FFFFFF;
 }
