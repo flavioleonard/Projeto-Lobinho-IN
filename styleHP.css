@@ -523,6 +523,8 @@ h3 {
     align-items: flex-start;
 }
 
+/** FOOTER : TEXTO DE CADA ITEM **/
+
 .local > p {
     left: 38.64%;
     right: 36.64%;
@@ -558,6 +560,8 @@ h3 {
     color: #FFFFFF;
 }
 
+/** FOOTER : IMAGEM DA PATA **/
+
 .patas {
     position: absolute;
     left: 76.79%;
@@ -565,6 +569,8 @@ h3 {
     top: 32%;
     bottom: 30.18%;
 }
+
+/** BOTÃO DE "QUEM SOMOS" **/
 
 .btn {
     width: 144px;
