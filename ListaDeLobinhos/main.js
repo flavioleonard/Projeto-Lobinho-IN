@@ -22,14 +22,34 @@ if (!localStorage.getItem('lobos')) {
     console.log('LocalStorage já inicializado');
 }
 
+
+
 function obterLobosDoLocalStorage() {
     const lobos = localStorage.getItem('lobos');
     return JSON.parse(lobos);
 }
 
-function renderizarLobos() {
-    const lobos = obterLobosDoLocalStorage();
+function filtraLobos(){
+    console.log("iniciou a func filtra");
+    let lobos = obterLobosDoLocalStorage();
+    const inputPesquisa = document.querySelector('#input-pesquisa');
+    const filtro = inputPesquisa.value
+    let lobosFiltrados = lobos.nome.filter((lobo) => lobo === filtro);
+    renderizarLobos(lobosFiltrados); // Passa os lobos filtrados como argumento
+    console.log(lobosFiltrados);
+}
+
+function renderizarLobos(loboFiltrados = null) {
+
+    let lobos = obterLobosDoLocalStorage();
     const container = document.querySelector('.container');
+
+    // Limpa o container antes de adicionar novos elementos
+    container.innerHTML = '';
+
+    // if (lobosFiltrados) {
+    //     lobos = lobosFiltrados;
+    // }
 
     lobos.forEach(lobo => {
         const loboDiv = document.createElement('div');
@@ -70,21 +90,23 @@ function renderizarLobos() {
             loboDono.textContent = `Adotado por: ${lobo.nomeDono}, Idade: ${lobo.idadeDono}, Email: ${lobo.emailDono}`;
             loboInfo.appendChild(loboDono);
             loboDiv.appendChild(adotadoButton);
-
-            
         }
         else {
             loboDiv.appendChild(adotarButton);
-
         }
-        
-
         loboDiv.appendChild(loboImg);
         loboDiv.appendChild(loboInfo);
-        
         container.appendChild(loboDiv);
     });
 }
-
-// Chamar a função renderizarLobos após a página carregar
 document.addEventListener('DOMContentLoaded', renderizarLobos);
+document.getElementById('#botao-pesquisa').addEventListener('click', filtraLobos);
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const botaoPesquisa = document.querySelector('#botao-pesquisa');
+//     botaoPesquisa.addEventListener('click', filtraLobos);
+
+//     // Adiciona um event listener para o input de pesquisa
+//     const inputPesquisa = document.querySelector('#input-pesquisa');
+//     inputPesquisa.addEventListener('input', filtraLobos);
+// });
