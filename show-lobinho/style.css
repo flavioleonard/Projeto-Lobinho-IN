@@ -198,3 +198,41 @@ footer {
     justify-content: center;
     margin-right: 180px;
 }
+
+@media (max-width: 1170px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 50px
+    }
+    
+    .secao1-footer {
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    .secao2-footer {
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao1-footer, .secao2-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn-quem-somos {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .secao1-2-footer {
+        width: 100%;
+        height: auto;
+    }
+}
