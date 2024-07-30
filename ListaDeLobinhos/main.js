@@ -27,7 +27,6 @@ function obterLobosDoLocalStorage() {
     return JSON.parse(lobos);
 }
 
-
 function renderizarLobos() {
     const lobos = obterLobosDoLocalStorage();
     const container = document.querySelector('.container');
@@ -40,26 +39,49 @@ function renderizarLobos() {
         loboImg.src = lobo.imagem;
         loboImg.alt = lobo.nome;
 
+        const loboInfo = document.createElement('div');
+        loboInfo.classList.add('info');
+
+        const adotarButton = document.createElement('button');
+        adotarButton.classList.add('btn-primary');
+        adotarButton.textContent = 'Adotar';
+
+        const adotadoButton = document.createElement('button');
+        adotadoButton.classList.add('btn-secundary');
+        adotadoButton.textContent = 'Adotado';
+
         const loboNome = document.createElement('h2');
         loboNome.textContent = lobo.nome;
 
         const loboIdade = document.createElement('p');
         loboIdade.textContent = `Idade: ${lobo.idade}`;
+        loboIdade.classList.add('idade');
 
         const loboDescricao = document.createElement('p');
         loboDescricao.textContent = lobo.descricao;
+        loboIdade.classList.add('descricao');
 
-        loboDiv.appendChild(loboImg);
-        loboDiv.appendChild(loboNome);
-        loboDiv.appendChild(loboIdade);
-        loboDiv.appendChild(loboDescricao);
+        loboInfo.appendChild(loboNome);
+        loboInfo.appendChild(loboIdade);
+        loboInfo.appendChild(loboDescricao);
 
         if (lobo.adotado) {
             const loboDono = document.createElement('p');
             loboDono.textContent = `Adotado por: ${lobo.nomeDono}, Idade: ${lobo.idadeDono}, Email: ${lobo.emailDono}`;
-            loboDiv.appendChild(loboDono);
-        }
+            loboInfo.appendChild(loboDono);
+            loboDiv.appendChild(adotadoButton);
 
+            
+        }
+        else {
+            loboDiv.appendChild(adotarButton);
+
+        }
+        
+
+        loboDiv.appendChild(loboImg);
+        loboDiv.appendChild(loboInfo);
+        
         container.appendChild(loboDiv);
     });
 }

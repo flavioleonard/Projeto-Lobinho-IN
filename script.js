@@ -33,15 +33,13 @@ function renderizarLobos() {
     const container = document.querySelector('.container');
 
     lobos.forEach(lobo => {
-
-
         const loboDiv = document.createElement('div');
         loboDiv.classList.add('lobo');
 
         const loboImg = document.createElement('img');
         loboImg.src = lobo.imagem;
         loboImg.alt = lobo.nome;
-
+        
         const loboNome = document.createElement('h2');
         loboNome.textContent = lobo.nome;
 

@@ -93,33 +93,80 @@ header a:hover::after {
     align-items: center;
 }
 
-.lobo{
+.lobo {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     border: 5px solid black;
     width: 80%;
     margin: 20px;
-}
-
-.lobo img{
-    width: 50%;
-    height: 50%;
+    padding: 20px;
+    box-sizing: border-box;
     position: relative;
-    margin: 40px;
 }
 
-.lobo img::before {
-    content: '';
-    position: absolute;
-    top: -25px;
-    left: -25px;
-    width: 430px;
-    height: 328px;
-    background-color: hsla(210, 49%, 34%, 1);
-    border: 3px #000 solid;
-    z-index: -1;
+.lobo img {
+    width: 30%;
+    height: auto;
+    margin: 0 20px;
 }
+
+.lobo .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.lobo h2, .lobo p {
+    margin: 10px 0;
+}
+
+.btn-primary {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #DEB959;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #c9a551;
+}
+
+.btn-secundary {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #2cc511;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+
+.idade {
+    margin: 5px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.lobo h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 .container .img {
     width: 20%;
