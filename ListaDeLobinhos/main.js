@@ -30,27 +30,30 @@ function obterLobosDoLocalStorage() {
 }
 
 function filtraLobos(){
-    console.log("iniciou a func filtra");
     let lobos = obterLobosDoLocalStorage();
-    const inputPesquisa = document.querySelector('#input-pesquisa');
-    const filtro = inputPesquisa.value
-    let lobosFiltrados = lobos.nome.filter((lobo) => lobo === filtro);
-    renderizarLobos(lobosFiltrados); // Passa os lobos filtrados como argumento
-    console.log(lobosFiltrados);
+    
+    const inputPesquisa = document.getElementById('input-pesquisa');
+
+    const inputValue = inputPesquisa.value.toLowerCase();
+
+    let lobosFiltrados = lobos.filter((lobo) => lobo.nome.toLowerCase() === inputValue);
+
+    renderizarLobos(lobosFiltrados);
 }
 
-function renderizarLobos(loboFiltrados = null) {
-
-    let lobos = obterLobosDoLocalStorage();
+function renderizarLobos(loboFiltrados) {
+    let lobos;
+    let lobosStorage = obterLobosDoLocalStorage()
     const container = document.querySelector('.container');
+    container.innerHTML = ''; 
 
-    // Limpa o container antes de adicionar novos elementos
-    container.innerHTML = '';
 
-    // if (lobosFiltrados) {
-    //     lobos = lobosFiltrados;
-    // }
-
+    if(loboFiltrados.length > 0) {
+        lobos = loboFiltrados
+    } else {
+        lobos = lobosStorage
+    }
+  
     lobos.forEach(lobo => {
         const loboDiv = document.createElement('div');
         loboDiv.classList.add('lobo');
@@ -100,13 +103,7 @@ function renderizarLobos(loboFiltrados = null) {
     });
 }
 document.addEventListener('DOMContentLoaded', renderizarLobos);
-document.getElementById('#botao-pesquisa').addEventListener('click', filtraLobos);
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const botaoPesquisa = document.querySelector('#botao-pesquisa');
-//     botaoPesquisa.addEventListener('click', filtraLobos);
-
-//     // Adiciona um event listener para o input de pesquisa
-//     const inputPesquisa = document.querySelector('#input-pesquisa');
-//     inputPesquisa.addEventListener('input', filtraLobos);
-// });
+document.getElementById('botao-pesquisa').addEventListener('click', function(event)  {
+    event.preventDefault()
+    filtraLobos()
+})
