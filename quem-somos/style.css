@@ -1,0 +1,137 @@
+* {
+    font-family: "Darquer Grotesque", sans-serif;
+}
+
+header {
+    background-color: hsla(202, 85%, 74%, 1);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 95.55px;
+    height: 110.72px;
+    margin-right: 50px;
+}
+
+/* Links de navegação header */
+
+header a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.87rem;
+    color: #000;
+    position: relative;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+header a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease-in-out;
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    justify-content: center;
+    gap: 50px
+}
+
+.texto {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Darker Grotesque";
+}
+
+.descricao {
+    width: 960px;
+    height: 135px;
+    font-size: 24px;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.155em;
+}
+
+footer {
+    height: 275px;
+    width: auto;
+    background-color: hsla(0, 0%, 20%, 1);
+    border-top: 6px solid;
+    border-image: linear-gradient(to right, hsla(43, 67%, 61%, 1), hsla(210, 49%, 34%, 1)) 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+.secao1-footer {
+    display: flex;
+    gap: 50px;
+    margin-left: 180px;
+}
+
+.inf-contato {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn-quem-somos {
+    width: 144px;
+    height: 30px;
+    background-color: hsla(43, 67%, 61%, 1);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.btn-quem-somos:hover {
+    cursor: pointer;
+    border: 3px solid #000;
+}
+
+.secao1-2-footer {
+    height: 168px;
+    width: 378px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secao2-footer img {
+    height: 104px;
+    width: 104px;
+    margin-left: 10px;
+}
+
+.secao2-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 180px;
+}
