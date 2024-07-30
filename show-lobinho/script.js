@@ -20,7 +20,7 @@ showLobinho.innerHTML = `
     <div class="secao-esquerda">
         <img src="${detalhesLobo.imagem}" alt="">
         <div class="botoes">
-            <button class="adotar" onclick="window.location.href='/adotar-lobinho';">ADOTAR</button>
+            <button class="adotar" onclick="window.location.href='/adotar-lobo?${loboId}';">ADOTAR</button>
             <button class="excluir">EXCLUIR</button>
         </div>
     </div>
