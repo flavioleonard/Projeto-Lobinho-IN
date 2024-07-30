@@ -58,6 +58,8 @@ main {
     align-items: center;
 }
 
+/** CAIXA COM OS DADOS **/
+
 .box-adocao {
     width: 63rem;
     height: 55rem;
@@ -75,6 +77,7 @@ h1 {
 }
 
 /* Inputs e labels de adoção */
+/** FORMULÁRIO **/
 
 .inputs-adocao {
     width: 47.5rem;
@@ -94,6 +97,8 @@ input {
     border: 1px solid #000;
     font-size: 1.5rem;
 }
+
+/** LINHA 1: NOME E ANOS **/
 
 .linha1 {
     display: flex;
@@ -168,6 +173,8 @@ footer {
     gap: 50px;
 }
 
+/** SEÇÃO PARA CADA DADO DE CONTATO **/
+
 .inf-contato {
     display: flex;
     gap: 10px;
@@ -216,6 +223,8 @@ footer {
     gap: 10px;
     justify-content: center;
 }
+
+/** RESPONSIVIDADE FOOTER **/
 
 @media (max-width: 1170px) {
     footer {
