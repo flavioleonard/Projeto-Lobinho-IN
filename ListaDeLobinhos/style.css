@@ -51,10 +51,10 @@ header a:hover::after {
     width: 100%;
 }
 /*container*/
-#container{
+.container{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100%;
 
 }
 

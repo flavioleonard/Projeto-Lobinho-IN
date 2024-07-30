@@ -2,43 +2,67 @@ async function inicializarLocalStorage() {
     try {
         const response = await fetch('lobinhos.json');
         if (!response.ok) {
-            throw new Error('Falha ao carregar o arquivo JSON');
+            throw new Error(`Erro ao buscar lobinho.json: ${response.statusText}`);
         }
         const lobos = await response.json();
         localStorage.setItem('lobos', JSON.stringify(lobos));
-        renderizarLobos(lobos);
+        console.log('Lobos inicializados no localStorage');
     } catch (error) {
         console.error('Erro ao inicializar o localStorage:', error);
     }
 }
 
-function renderizarLobos(lobos) {
-    const container = document.getElementById('container');
-    container.innerHTML = ''; // Limpa o container antes de renderizar
+if (!localStorage.getItem('lobos')) {
+    inicializarLocalStorage().then(() => {
+        console.log('Inicialização do localStorage concluída');
+    }).catch(error => {
+        console.error('Erro durante a inicialização do localStorage:', error);
+    });
+} else {
+    console.log('LocalStorage já inicializado');
+}
+
+function obterLobosDoLocalStorage() {
+    const lobos = localStorage.getItem('lobos');
+    return JSON.parse(lobos);
+}
+
+
+function renderizarLobos() {
+    const lobos = obterLobosDoLocalStorage();
+    const container = document.querySelector('.container');
 
     lobos.forEach(lobo => {
-        const loboElement = document.createElement('div');
-        loboElement.className = 'lobo';
-        loboElement.innerHTML = `
-            <h2>${lobo.nome}</h2>
-            <img src="${lobo.imagem}" alt="${lobo.nome}">
-            <p>Idade: ${lobo.idade}</p>
-            <p>${lobo.descricao}</p>
-            <p>Adotado: ${lobo.adotado ? 'Sim' : 'Não'}</p>
-            ${lobo.adotado ? `
-                <p>Nome do Dono: ${lobo.nomeDono}</p>
-                <p>Idade do Dono: ${lobo.idadeDono}</p>
-                <p>Email do Dono: ${lobo.emailDono}</p>
-            ` : ''}
-        `;
-        container.appendChild(loboElement);
+        const loboDiv = document.createElement('div');
+        loboDiv.classList.add('lobo');
+
+        const loboImg = document.createElement('img');
+        loboImg.src = lobo.imagem;
+        loboImg.alt = lobo.nome;
+
+        const loboNome = document.createElement('h2');
+        loboNome.textContent = lobo.nome;
+
+        const loboIdade = document.createElement('p');
+        loboIdade.textContent = `Idade: ${lobo.idade}`;
+
+        const loboDescricao = document.createElement('p');
+        loboDescricao.textContent = lobo.descricao;
+
+        loboDiv.appendChild(loboImg);
+        loboDiv.appendChild(loboNome);
+        loboDiv.appendChild(loboIdade);
+        loboDiv.appendChild(loboDescricao);
+
+        if (lobo.adotado) {
+            const loboDono = document.createElement('p');
+            loboDono.textContent = `Adotado por: ${lobo.nomeDono}, Idade: ${lobo.idadeDono}, Email: ${lobo.emailDono}`;
+            loboDiv.appendChild(loboDono);
+        }
+
+        container.appendChild(loboDiv);
     });
 }
 
-if (!localStorage.getItem('lobos')) {
-    inicializarLocalStorage();
-} else {
-    const lobos = JSON.parse(localStorage.getItem('lobos'));
-    renderizarLobos(lobos);
-}
-
+// Chamar a função renderizarLobos após a página carregar
+document.addEventListener('DOMContentLoaded', renderizarLobos);
