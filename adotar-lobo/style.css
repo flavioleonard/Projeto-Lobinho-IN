@@ -14,7 +14,7 @@ body{
 header {
     background-color: hsla(202, 85%, 74%, 1);
     width: 100%;
-    height: 130px;
+    height: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,111 +53,108 @@ header a:hover::after {
 
 /*Content*/
 
-#container{
-    line-height: 81.36px;
+main {
+    height: 645px;
+    width: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: auto;
-    flex-direction: column;
-    margin-top: 30px;
 }
 
-#container .title {
-    position: relative;
+
+.title {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    gap: 40px
 }
 
-
-#input_container{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-}
-#input_container_1 {
-    display: flex;
-    flex-direction: row;
-    gap: 20px; 
-}
-
-input, p{
-    margin: .2em;
-    height: 20px;
-}
-
-.name input{
-    border: none; 
-    border-bottom: 2px solid black; 
-    padding: 5px; 
-    outline: none; 
-    font-size: 16px; 
-    width: 500px;
-}
-
-.age input {
-    border: none; 
-    border-bottom: 2px solid black; 
-    padding: 5px; 
-    outline: none; 
-    font-size: 16px; 
-    width: 72px;
-}
-
-.email input {
-    border: none; 
-    border-bottom: 2px solid black; 
-    padding: 5px; 
-    outline: none; 
-    font-size: 16px; 
-    width: 615px;
-}
-
-.name {
-    height: 84px;
-}
-
-.adote{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: flex-start;
-}
-
-.adote h1{
-    font-size: 60px;
-    margin: 0px;
+.image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 .adote p{
-    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
 }
 
-button{
-background: #2C5680;
-width: 209px;
-height: 60px;
-left: 592px;
-top: 668px;
-color: #fff;
-border: 1px solid #333333;
-display: flex;
-justify-content: center;
-align-items: center;
-text-decoration: none;
-font-size: 20px;
-line-height: 35px;
+.adote {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
 
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
 
+.input_container {
+    width: 960px;
+    height: 188px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.name p,
+.age p,
+.email p{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.name input {
+    border: none;
+    border-bottom: 1px solid hsla(0, 0%, 20%, 1); 
+    outline: none;
+    width: 868px;
+    font-size: 1.5rem;
+}
+
+.age input {
+    border: none;
+    border-bottom: 1px solid hsla(0, 0%, 20%, 1); 
+    outline: none;
+    width: 72px;
+    font-size: 1.5rem;
+}
+
+.email input {
+    border: none;
+    border-bottom: 1px solid hsla(0, 0%, 20%, 1); 
+    outline: none;
+    width: 950px;
+    font-size: 1.5rem;
+}
+
+.input_container_1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.adotarBtn {
+    width: 210px;
+    height: 60px;
+    background-color: hsla(210, 49%, 34%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 380px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adotarBtn:hover {
+    cursor: pointer;
+}
 
 /*Rodapé*/
 
@@ -172,7 +169,6 @@ footer {
     align-items: center;
     color: #fff;
     font-family: "Darker Grotesque", sans-serif;
-    margin-top: 40px;
     padding: 30px;
    
 }
