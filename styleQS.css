@@ -1,3 +1,7 @@
+* {
+    font-family: "Darquer Grotesque", sans-serif;
+}
+
 header {
     background-color: hsla(202, 85%, 74%, 1);
     width: 100%;
@@ -10,6 +14,7 @@ header {
 header img {
     width: 95.55px;
     height: 110.72px;
+    margin-right: 50px;
 }
 
 /* Links de navegação header */
@@ -27,7 +32,7 @@ header a::after {
     content: " ";
     width: 0%;
     height: 3px;
-    background-color: white;
+    background-color: #000;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -38,45 +43,32 @@ header a:hover::after {
     width: 100%;
 }
 
-.texto {
-    position: absolute;
-    width: 811.59px;
-    height: 56px;
-    left: 293.3px;
-    top: 180px;
-    
+main {
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
     align-items: center;
+    height: 350px;
+    justify-content: center;
+    gap: 50px
+}
 
-    font-family: 'Roboto';
-    font-style: normal;
+.texto {
     font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-
-    color: #000000;
+    font-weight: 500;
+    font-family: "Darker Grotesque";
 }
 
 .descricao {
-    position: absolute;
     width: 960px;
-    height: 134px;
-    left: 219px;
-    top: 286px;
-
-    font-family: 'Darker Grotesque';
-    font-style: normal;
+    height: 135px;
     font-size: 24px;
-    line-height: 24px;
+    font-family: "Darker Grotesque", sans-serif;
     text-align: center;
+    line-height: 24px;
     letter-spacing: 0.155em;
-
-    color: #000000;
 }
 
 footer {
-    margin-top: 350px;
     height: 275px;
     width: auto;
     background-color: hsla(0, 0%, 20%, 1);
