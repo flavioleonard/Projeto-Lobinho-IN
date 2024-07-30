@@ -59,6 +59,8 @@ main {
     align-items: center;
 }
 
+/** CLASSE CRIADA NO JS **/
+
 .show-lobinho {
     display: flex;
     width: 62.5rem;
@@ -66,12 +68,16 @@ main {
     margin-top: 25px;
 }
 
+/** NOME DO LOBO **/
+
 h1 {
     font-size: 36px;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     margin-top: 25px;
 }
+
+/** IMAGEM E BOTÕES **/
 
 .secao-esquerda {
     position: relative;
@@ -144,10 +150,14 @@ footer {
     font-family: "Darker Grotesque", sans-serif;
 }
 
+/** SEÇÃO DO IFRAME, DADOS E BOTÃO **/
+
 .secao1-footer {
     display: flex;
     gap: 50px;
 }
+
+/** CADA DADO DE CONTATO **/
 
 .inf-contato {
     display: flex;
@@ -183,6 +193,8 @@ footer {
     justify-content: space-between;
 }
 
+/** IMAGEM DE PATA **/
+
 .secao2-footer img {
     height: 104px;
     width: 104px;
@@ -196,6 +208,8 @@ footer {
     gap: 10px;
     justify-content: center;
 }
+
+/** RESPONSIVIDADE DO FOOTER **/
 
 @media (max-width: 1170px) {
     footer {
