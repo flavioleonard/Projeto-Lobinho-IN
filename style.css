@@ -1,0 +1,633 @@
+/** GLOBAL **/
+
+h1 {
+    font-family:"Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #DEB959;
+    margin-top: 5px;
+}
+
+h3 {
+    position: absolute;
+    left: 76.14%;
+    right: 15.36%;
+    top: 20.36%;
+    bottom: 70.91%;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    flex-wrap: nowrap;
+
+    color: #FFFFFF;
+}
+
+/** HEADER **/
+
+.cabeca {
+    background-color: hsla(202, 85%, 74%, 1);
+    width: auto;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabeca img {
+    width: 95.55px;
+    height: 110.72px;
+    margin-right: 50px;
+}
+
+/* Links de navegação header */
+
+.cabeca a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.87rem;
+    color: #000;
+    position: relative;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+.cabeca a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease-in-out;
+}
+
+.cabeca a:hover::after {
+    width: 100%;
+}
+
+/** INÍCIO DA MAIN **/
+
+/** FIRST DIV : SEÇÃO LOBO DE FUNDO E TEXTO INTRODUTÓRIO **/
+
+.firstDiv {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Camada de sobreposição para escurecer a imagem */
+.firstDiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.182); 
+    z-index: 0;
+}
+
+.imagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.textoFirstDiv {
+    position: relative; 
+    width: 665px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1; 
+}
+
+.textoFirstDiv > h1 {
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 130px;
+    margin: 0;
+}
+
+.textoFirstDiv > p {
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px; 
+    margin: 20px 0 0; 
+}
+
+.adoteUmLobinho {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 238, 238);
+    text-decoration: none;
+}
+
+.adoteUmLobinho::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    width: 99px;
+    height: 5px; 
+    background-color: white;
+    transform: translateX(-50%);
+}
+/** SECOND DIV : SOBRE E TEXTO **/
+
+.secondDiv {
+    position: absolute;
+    width: 100vw;
+    height: 333px;
+    left: 0px;
+    top: 630px;
+
+    background-color: #2C5680;
+
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+}
+
+.secondDiv > p {
+    width: 960px;
+    height: 166px;
+    left: 220px;
+    top: 740px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+/** THIRD DIV : VALORES **/
+
+.thirdDiv {
+    position: absolute;
+    width: 100vw;
+    height: 625px;
+    left: 0px;
+    top: 963px;
+
+    background: #333333;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px
+}
+
+/** THIRD DIV : DIV PARA TODOS OS ITENS **/
+
+.itens {
+    width: 960px;
+    height: 428px;
+    left: 219px;
+    top: 1073px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+/** THIRD DIV : DIV PARA CADA ITEM **/
+
+.eachItem {
+    width: 195px;
+    height: 428px;
+    left: 219px;
+    top: 1073px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.tituloItens {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.textoItens {
+    width: 195px;
+    height: 140px;
+    left: 219px;
+    top: 1361px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/** TÍTULO : "LOBO EXEMPLO" **/
+
+.tituloLobos {
+    position: absolute;
+    width: 277px;
+    height: 65px;
+    left: 500px;
+    top: 1618px;
+    margin-left: 100px;
+
+    font-family:"Darker Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #DEB959;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+/** FOURTH DIV : EXEMPLOS DOS LOBOS **/
+
+.box-auxiliar {
+    height: 1037;
+    width: 100vw;
+}
+
+.fourthDiv {
+    position: absolute;
+    width: auto;
+    height: 789px;
+    left: 250px;
+    top: 1723px;
+}
+
+
+/** FOURTH DIV : PRIMEIRO LOBO EXEMPLO **/
+
+.firstWolf {
+    width: 991px;
+    height: 361px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    position: relative;
+}
+
+
+ /** DIVS PARA OS 2 EXEMPLOS **/
+
+.idadeLobo {
+    width: 150px;
+    height: 27px;
+    left: 710px;
+    top: 1794px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    white-space: nowrap;
+
+    color: #000000;
+}
+
+.quadAzul {
+    width: 430px;
+    height: 328px;
+}
+
+/** FOURTH DIV : EXCLUSIVO PRIMEIRO LOBO **/
+
+.lobo1 {
+    width: 430px;
+    height: 328px;
+    margin-left: -423px; 
+    z-index: 1;
+    align-self: flex-end;
+}
+
+.boxText1 {
+    width: 461px;
+    height: 339px;
+    left: 710px;
+    top: 1745px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nomeLobo1 {
+    width: 199px;
+    height: 49px;
+    left: 710px;
+    top: 1745px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 49px;
+
+    color: #000000;
+}
+
+.descricaoLobo1 {
+    width: 461px;
+    height: 235px;
+    left: 710px;
+    top: 1849px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+/** FOURTH DIV : SEGUNDO LOBO EXEMPLO **/
+
+.secondWolf {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 991px;
+    height: 361px;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/** FOURTH DIV : EXCLUSIVO SEGUNDO LOBO **/
+
+.lobo2 {
+    position: absolute;
+    width: 430px;
+    height: 328px;
+    right: 50px; 
+    z-index: 1;
+    align-self: flex-end;
+}
+
+.boxText2 {
+    width: 461px;
+    height: 339px;
+    left: 710px;
+    top: 1745px;   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.descricaoLobo2 {
+    width: 461px;
+    height: 235px;
+    left: 710px;
+    top: 1849px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 20px;
+
+    color: #000000;
+
+    text-align: right;
+}
+
+.nomeLobo2 {
+    width: 199px;
+    height: 49px;
+    left: 710px;
+    top: 1745px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 49px;
+
+    text-align: right;
+    color: #000000;
+}
+
+/** FIM DA MAIN **/
+
+/** FOOTER **/
+
+.foot {
+    position: absolute;
+    width: 100vw;
+    height: 275px;
+    left: 0px;
+    top: 2628px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #353535;
+    border: 1px solid black;
+
+    border-top: 6px solid;
+    border-image: linear-gradient(to right, hsla(43, 67%, 61%, 1), hsla(210, 49%, 34%, 1)) 1;
+}
+
+/** IFRAME **/
+
+.mapa {
+    position: absolute;
+    left: 15.64%;
+    right: 66.5%;
+    top: 20.36%;
+    bottom: 18.55%;
+}
+
+/** DIV PARA TODOS OS DADOS **/
+
+.dados {
+    position: absolute;
+    left: 36.36%;
+    right: 36.64%;
+    top: 20.36%;
+    bottom: 42.55%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+/** DIV PARA CADA ITEM DO CONTATO **/
+
+.local {
+    width: 378px;
+    height: 30px;
+    left: 36.36%;
+    right: 36.64%;
+    top: 20.36%;
+    bottom: 42.55%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
+}
+
+.tel {
+    width: 153px;
+    height: 15px;
+    left: 36.57%;
+    right: 52.5%;
+    top: 37.45%;
+    bottom: 57.09%;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row; 
+    align-items: flex-start;
+}
+
+.email {
+    width: 205px;
+    height: 15px;
+    left: 36.5%;
+    right: 48.86%;
+    top: 52%;
+    bottom: 42.55%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
+}
+
+.desenvolvido-com {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+/** FOOTER : TEXTO DE CADA ITEM **/
+
+.local > p {
+    left: 38.64%;
+    right: 36.64%;
+    top: 20.36%;
+    bottom: 68.73%;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.tel > p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.email > p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-right: 40px;
+
+    color: #FFFFFF;
+}
+
+/** FOOTER : IMAGEM DA PATA **/
+
+.patas {
+    position: absolute;
+    left: 76.79%;
+    right: 19.79%;
+    top: 32%;
+    bottom: 30.18%;
+}
+
+/** BOTÃO DE "QUEM SOMOS" **/
+
+.btn {
+    width: 144px;
+    height: 30px;
+    background-color: hsla(43, 67%, 61%, 1);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #000;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 5px;
+
+    position: absolute;
+    left: 36.57%;
+    right: 53.14%;
+    top: 70.55%;
+    bottom: 18.55%;
+
+    background: #DEB959;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 3px solid #000;
+}
