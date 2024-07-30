@@ -138,7 +138,7 @@ h1 {
     margin-top: 40px;
 }
 
-.adotarBtn {
+#adotarBtn {
     width: 210px;
     height: 60px;
     background-color: hsla(210, 49%, 34%, 1);
@@ -152,7 +152,7 @@ h1 {
     align-items: center;
 }
 
-.adotarBtn:hover {
+#adotarBtn:hover {
     cursor: pointer;
 }
 
