@@ -5,7 +5,9 @@ async function adicionarLobo() {
     let descricao = document.querySelector('#descricao').value;
 
     let lobos = JSON.parse(localStorage.getItem('lobos'));
-    let novoId = lobos.length + 1;
+    let ultimoLobo = lobos[lobos.length - 1];
+    let ultimoId = ultimoLobo.id;
+    let novoId = ultimoId + 1;
 
     let novoLobo = {
         id: novoId,
@@ -32,4 +34,4 @@ async function adicionarLobo() {
 }
 
 let botaoSalvar = document.querySelector('#btn-enviar');
-botaoSalvar.addEventListener('click', adicionarLobo);
+botaoSalvar.addEventListener('click', () => adicionarLobo());

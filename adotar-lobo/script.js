@@ -20,3 +20,41 @@ personalizarPagina.innerHTML = `
                     <h1>Adote o(a) ${detalhesLobo.nome}</h1>
                     <p>ID: ${detalhesLobo.id}</p>
                 </div> `;
+
+// Adotar lobo
+
+function adotarLobo(detalhesLobo,loboId) {
+    let nomeAdocao = document.querySelector(".nome-adocao").value
+    let idadeAdocao = document.querySelector(".idade-adocao").value
+    let emailAdocao = document.querySelector(".email-adocao").value
+    
+    let loboAdotado = {
+        id: loboId,
+        nome: detalhesLobo.nome,
+        idade: detalhesLobo.idade,
+        descricao: detalhesLobo.descricao,
+        imagem: detalhesLobo.imagem,
+        adotado: true,
+        nomeDono: nomeAdocao,
+        idadeDono: idadeAdocao,
+        emailDono: emailAdocao
+    };
+
+    let lobos = JSON.parse(localStorage.getItem('lobos'));
+    let index = loboId - 1
+    if (lobos[index].adotado === true) {
+        alert("Esse lobo já foi adotado.")
+    } else {
+        lobos[index] = loboAdotado;
+        localStorage.setItem('lobos', JSON.stringify(lobos));
+
+        document.querySelector('.nome-adocao').value = '';
+        document.querySelector('.idade-adocao').value = '';
+        document.querySelector('.email-adocao').value = '';
+        window.location.href = '/home-page';
+        alert("Lobo adotado com sucesso!")
+    };
+}
+
+let botaoAdotar = document.querySelector('.adotarBtn');
+botaoAdotar.addEventListener('click', () => adotarLobo(detalhesLobo, loboId));
