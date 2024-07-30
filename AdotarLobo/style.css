@@ -1,0 +1,234 @@
+* {
+    font-family: "Darker Grotesque", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: hsla(202, 85%, 74%, 1);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 95.55px;
+    height: 110.72px;
+}
+
+/* Links de navegação header */
+
+header a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.87rem;
+    color: #000;
+    position: relative;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+header a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease-in-out;
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+/*Content*/
+
+#container{
+    line-height: 81.36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#container .title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+#input_container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+#input_container_1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+}
+
+input, p{
+    margin: .2em;
+    height: 20px;
+}
+
+.name input{
+    border: none; 
+    border-bottom: 2px solid black; 
+    padding: 5px; 
+    outline: none; 
+    font-size: 16px; 
+    width: 500px;
+}
+
+.age input {
+    border: none; 
+    border-bottom: 2px solid black; 
+    padding: 5px; 
+    outline: none; 
+    font-size: 16px; 
+    width: 72px;
+}
+
+.email input {
+    border: none; 
+    border-bottom: 2px solid black; 
+    padding: 5px; 
+    outline: none; 
+    font-size: 16px; 
+    width: 615px;
+}
+
+.name {
+    height: 84px;
+}
+
+.adote{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.adote h1{
+    font-size: 60px;
+    margin: 0px;
+}
+
+.adote p{
+    margin: 0;
+}
+
+button{
+background: #2C5680;
+width: 209px;
+height: 60px;
+left: 592px;
+top: 668px;
+color: #fff;
+border: 1px solid #333333;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+font-size: 20px;
+line-height: 35px;
+}
+
+
+
+/*Rodapé*/
+
+footer {
+    height: 275px;
+    width: auto;
+    background-color: hsla(0, 0%, 20%, 1);
+    border-top: 6px solid;
+    border-image: linear-gradient(to right, hsla(43, 67%, 61%, 1), hsla(210, 49%, 34%, 1)) 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: "Darker Grotesque", sans-serif;
+    margin-top: 40px;
+    padding: 30px;
+   
+}
+
+.secao1-footer {
+    display: flex;
+    gap: 50px;
+    margin-left: 180px;
+}
+
+.inf-contato {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn-quem-somos {
+    width: 144px;
+    height: 30px;
+    background-color: hsla(43, 67%, 61%, 1);
+    font-size: 25px;
+    font-weight: 600;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 5px;
+    color: #000     ;
+}
+
+.btn-quem-somos:hover {
+    cursor: pointer;
+    border: 3px solid #000;
+}
+
+.secao1-2-footer {
+    height: 168px;
+    width: 378px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secao2-footer img {
+    height: 104px;
+    width: 104px;
+    margin-left: 10px;
+}
+
+.secao2-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 180px;
+}
