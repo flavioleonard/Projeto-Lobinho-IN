@@ -20,12 +20,19 @@ showLobinho.innerHTML = `
     <div class="secao-esquerda">
         <img src="${detalhesLobo.imagem}" alt="">
         <div class="botoes">
-            <button class="adotar" onclick="window.location.href='/adotar-lobo?${loboId}';">ADOTAR</button>
+            <button class="adotar" data-id="${detalhesLobo.id}">ADOTAR</button>
             <button class="excluir">EXCLUIR</button>
         </div>
     </div>
     <p>${detalhesLobo.descricao}</p>
 </section>`;
+
+document.querySelectorAll('.adotar').forEach(button => {
+    button.addEventListener('click', function() {
+        const loboId = this.getAttribute('data-id');
+        window.location.href = `/adotar-lobo/?id=${loboId}`;
+    });
+});
 
 // Deletar lobo da lista
 function deletarLobo(id) {
