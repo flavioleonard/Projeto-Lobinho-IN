@@ -38,5 +38,5 @@ function deletarLobo(id) {
     window.location.href = '/lista-de-lobinhos';
 }
 
-let botaoExcluir = document.querySelector('.excluir')
+let botaoExcluir = document.querySelector('.excluir');
 botaoExcluir.addEventListener('click', () => deletarLobo(loboId));
