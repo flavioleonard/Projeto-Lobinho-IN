@@ -33,6 +33,8 @@ function renderizarLobos() {
     const container = document.querySelector('.container');
 
     lobos.forEach(lobo => {
+
+
         const loboDiv = document.createElement('div');
         loboDiv.classList.add('lobo');
 
