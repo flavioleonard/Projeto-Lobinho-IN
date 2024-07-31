@@ -125,5 +125,37 @@ function exibirPaginacao() {
     }
 }
 
-exibirItens();
-exibirPaginacao();
+
+function filtrarLobos() {
+    let lobos = lobosNaoAdotados()
+    const inputPesquisa = document.querySelector('.procurar-lobo').value.toLowerCase()
+    let loboFiltrado = lobos.filter((lobo) => lobo.nome.toLowerCase() === inputPesquisa)
+
+    const container = document.querySelector('.show-lobos');
+    container.innerHTML = `<div class="lobo lobo-esquerda">
+                    <div class="secao-1">
+                        <img class="icone-lobo" src="${loboFiltrado[0].imagem}">
+                    </div>
+                    <div class="secao-2">
+                        <div class="secao-2-1">
+                            <div class="secao-2-1-1">
+                                <h2>${loboFiltrado[0].nome}</h2>
+                                <p>Idade: ${loboFiltrado[0].idade} anos</p>
+                            </div>
+                            <div class="secao-2-1-2">
+                                <button>Adotar</button>
+                            </div>
+                        </div>
+                        <div class="secao-2-2">
+                            <p>${loboFiltrado[0].descricao}</p>
+                        </div>
+                    </div>
+                </div>`;
+    document.querySelector('.procurar-lobo').value = '';
+}
+
+exibirItens()
+exibirPaginacao()
+
+let botaoProcurar = document.querySelector('.btn-procurar');
+botaoProcurar.addEventListener('click', () => filtrarLobos());
