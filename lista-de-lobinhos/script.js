@@ -28,9 +28,6 @@ function exibirItens() {
     const itensPagina = lobos.slice(inicio, fim);
 
     itensPagina.forEach((lobo, index) => {
-        const classeBotao = mostrarApenasAdotados ? 'btn-adotado' : 'btn-adotar';
-        const textoBotao = mostrarApenasAdotados ? 'Adotado' : 'Adotar';
-
         container.innerHTML += `
             <div class="lobo ${index % 2 === 0 ? 'lobo-esquerda' : 'lobo-direita'}">
                 <div class="secao-1">
@@ -43,7 +40,7 @@ function exibirItens() {
                             <p>Idade: ${lobo.idade} anos</p>
                         </div>
                         <div class="secao-2-1-2">
-                            <button class="${classeBotao}">${textoBotao}</button>
+                            <button class="adotar" data-id="${lobo.id}">${mostrarApenasAdotados ? 'Adotado' : 'Adotar'}</button>
                         </div>
                     </div>
                     <div class="secao-2-2">
@@ -93,9 +90,6 @@ function filtrarLobos() {
     container.innerHTML = '';
 
     loboFiltrado.forEach((lobo, index) => {
-        const classeBotao = mostrarApenasAdotados ? 'btn-adotado' : 'btn-adotar';
-        const textoBotao = mostrarApenasAdotados ? 'Adotado' : 'Adotar';
-
         container.innerHTML += `
             <div class="lobo ${index % 2 === 0 ? 'lobo-esquerda' : 'lobo-direita'}">
                 <div class="secao-1">
@@ -108,7 +102,7 @@ function filtrarLobos() {
                             <p>Idade: ${lobo.idade} anos</p>
                         </div>
                         <div class="secao-2-1-2">
-                            <button class="${classeBotao}">${textoBotao}</button>
+                            <button class="adotar" data-id="${lobo.id}">${mostrarApenasAdotados ? 'Adotado' : 'Adotar'}</button>
                         </div>
                     </div>
                     <div class="secao-2-2">
@@ -132,3 +126,10 @@ exibirItens();
 exibirPaginacao();
 
 document.querySelector('.btn-procurar').addEventListener('click', filtrarLobos);
+
+document.querySelectorAll('.adotar').forEach(button => {
+    button.addEventListener('click', function() {
+        const loboId = this.getAttribute('data-id');
+        window.location.href = `/show-lobinho/?id=${loboId}`;
+    });
+});

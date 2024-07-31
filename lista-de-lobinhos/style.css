@@ -237,6 +237,7 @@ main {
     font-size: 40px;
     font-weight: 600;
 }
+
 .paginacao button.desativado {
     cursor: not-allowed;
     opacity: 0.5;
