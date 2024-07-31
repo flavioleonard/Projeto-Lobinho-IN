@@ -177,6 +177,27 @@ header a:hover::after {
 
 
 /*paginação */
+.paginacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao-pagina {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.botao-pagina.ativo {
+    background-color: #333;
+    color: #fff;
+    cursor: default;
+}
+
+
 
 
 /*Rodapé*/

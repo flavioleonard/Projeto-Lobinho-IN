@@ -22,8 +22,6 @@ if (!localStorage.getItem('lobos')) {
     console.log('LocalStorage já inicializado');
 }
 
-
-
 function obterLobosDoLocalStorage() {
     const lobos = localStorage.getItem('lobos');
     return JSON.parse(lobos);
@@ -40,6 +38,8 @@ function filtraLobos(){
 
     renderizarLobos(lobosFiltrados);
 }
+
+
 
 function renderizarLobos(loboFiltrados) {
     let lobos;
@@ -94,14 +94,18 @@ function renderizarLobos(loboFiltrados) {
             loboInfo.appendChild(loboDono);
             loboDiv.appendChild(adotadoButton);
         }
-        else {
-            loboDiv.appendChild(adotarButton);
-        }
+        adotarButton.addEventListener('click', function() {
+            // Aqui você define a URL para a página para onde quer redirecionar
+            window.location.href = '../adotar-lobo/index.html';
+        });
+        loboDiv.appendChild(adotarButton);
         loboDiv.appendChild(loboImg);
         loboDiv.appendChild(loboInfo);
         container.appendChild(loboDiv);
     });
 }
+
+
 document.addEventListener('DOMContentLoaded', renderizarLobos);
 document.getElementById('botao-pesquisa').addEventListener('click', function(event)  {
     event.preventDefault()
