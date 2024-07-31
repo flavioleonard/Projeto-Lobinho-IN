@@ -60,7 +60,7 @@ main {
 /* Barra de pesquisa, botão + lobo e checkbox */
 
 .procurar-lobo {
-    height: 47px;
+    height: 56px;
     width: 700px;
     font-size: 1.3rem;
     margin-right: 10px;
@@ -80,15 +80,11 @@ main {
 }
 
 .btn-procurar {
-    border: none;
-    background-color: #fff;
-    margin-top: 15px;
+    background-color: hsl(0, 0%, 85%);
     cursor: pointer;
-}
-
-.btn-procurar img {
-    width: 40px;
-    height: 40px;
+    padding: 6px 10px 12px 10px;
+    border: 3px hsl(0, 0%, 0%) solid;
+    border-radius: 4px;
 }
 
 .checkbox {
