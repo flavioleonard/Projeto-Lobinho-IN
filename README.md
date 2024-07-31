@@ -6,7 +6,7 @@ Foram utilizados nesse projeto:
 - CSS
 - HTML
 - Javascript
-- + LocalStorage
+- LocalStorage
 
 Desenvolvedores:
 - Flavio Leonardo Figueira Flores
