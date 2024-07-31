@@ -51,8 +51,8 @@ function adotarLobo(detalhesLobo,loboId) {
         document.querySelector('.nome-adocao').value = '';
         document.querySelector('.idade-adocao').value = '';
         document.querySelector('.email-adocao').value = '';
-        window.location.href = '/home-page';
         alert("Lobo adotado com sucesso!")
+        window.location.href = '/index.html';
     };
 }
 
