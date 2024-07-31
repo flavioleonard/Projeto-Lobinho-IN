@@ -1,16 +1,12 @@
+/* GLOBAL */
+
 * {
+    box-sizing: border-box;
     font-family: "Darker Grotesque", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-body{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    
 }
 
-/*Cabeçalho*/
+/* CABEÇALHO */
+
 header {
     background-color: hsla(202, 85%, 74%, 1);
     width: 100%;
@@ -23,6 +19,7 @@ header {
 header img {
     width: 95.55px;
     height: 110.72px;
+    margin-right: 50px;
 }
 
 /* Links de navegação header */
@@ -50,15 +47,200 @@ header a::after {
 header a:hover::after {
     width: 100%;
 }
-/*container*/
-.container{
+
+/* MAIN */
+main {
+    height: 1855px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.procurar-lobo {
+    height: 47px;
+    width: 700px;
+    font-size: 1.3rem;
+}
+
+.btn-procurar {
+    width: 130px;
+    height: 53px;
+    margin-left: 10px;
+    background-color: hsla(43, 67%, 61%, 1);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 14px;
+}
+
+.checkbox {
+    display: flex;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px
+}
+
+.checkbox p{
+    font-size: 24px;
+}
+
+.checkbox input {
+    height: 20px;
+    width: 20px;
+}
+
+.container {
+    width: 70%;
+    height: 1855px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icone-lobo {
+    width: 430px;
+    height: 328px;
+    position: relative;
+    margin-left: 30px;
+    border: 3px solid #000;
 
 }
 
-/*Rodapé*/
+.secao-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative; 
+}
+
+.lobo-esquerda .secao-1::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    width: 430px;
+    height: 328px;
+    background: hsla(210, 49%, 34%, 1);
+    z-index: -1; 
+    border: 3px solid black; 
+}
+
+.lobo-direita .secao-1::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 430px;
+    height: 328px;
+    background: hsla(210, 49%, 34%, 1);
+    z-index: -1;
+    border: 3px solid black;
+}
+
+.lobo {
+    width: 1000px;
+    height: 361px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.show-lobos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.secao-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.secao-2-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-2 {
+    height: 340px;
+    width: 478px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secao-2-2 p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: "Darker Grotesque";
+}
+
+.secao-2-1-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secao-2-1-1 h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.secao-2-1-1 p {
+    font-size: 20px;
+}
+
+.secao-2-1-2 button {
+    width: 157px;
+    height: 45px;
+    background-color: hsla(43, 67%, 61%, 1);
+    font-weight: 500;
+    font-size: 36px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.secao-2-1-2 button:hover {
+    cursor: pointer;
+}
+
+.lobo-direita {
+    display: flex;
+    flex-direction: row-reverse; 
+}
+
+.lobo-direita .secao-2-1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.lobo-direita .secao-2-2 p {
+    text-align: right;
+}
+
+.paginacao button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    font-size: 40px;
+    font-weight: 600;
+}
+.paginacao button.desativado {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* RODAPÉ */
+
 footer {
     height: 275px;
     width: auto;
@@ -70,9 +252,9 @@ footer {
     align-items: center;
     color: #fff;
     font-family: "Darker Grotesque", sans-serif;
-    margin-top: 40px;
-    padding: 30px;
 }
+
+/* Seção esquerda: mapa, contato e botão "quem somos" */
 
 .secao1-footer {
     display: flex;
@@ -97,7 +279,6 @@ footer {
     justify-content: center; 
     align-items: center;
     padding-bottom: 5px;
-    color: #000 ;
 }
 
 .btn-quem-somos:hover {
@@ -108,11 +289,12 @@ footer {
 .secao1-2-footer {
     height: 168px;
     width: 378px;
-    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* Seção 2: Paw */
 
 .secao2-footer img {
     height: 104px;
@@ -126,4 +308,42 @@ footer {
     font-size: 18px;
     gap: 10px;
     justify-content: center;
+}
+
+@media (max-width: 1170px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 50px;
+    }
+    
+    .secao1-footer {
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    .secao2-footer {
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao1-footer, .secao2-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn-quem-somos {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .secao1-2-footer {
+        width: 100%;
+        height: auto;
+    }
 }
