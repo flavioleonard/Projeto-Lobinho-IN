@@ -50,7 +50,7 @@ header a:hover::after {
 
 /* MAIN */
 main {
-    height: 1855px;
+    height: auto;
     width: auto;
     display: flex;
     justify-content: center;
@@ -61,6 +61,7 @@ main {
     height: 47px;
     width: 700px;
     font-size: 1.3rem;
+    margin-top: 50px;
 }
 
 .btn-procurar {
@@ -72,13 +73,15 @@ main {
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 14px;
+    cursor: pointer;
 }
 
 .checkbox {
     display: flex;
     margin-top: 15px;
     display: flex;
-    gap: 10px
+    gap: 10px;
+    margin-bottom: 50px;
 }
 
 .checkbox p{
@@ -92,7 +95,7 @@ main {
 
 .container {
     width: 70%;
-    height: 1855px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
