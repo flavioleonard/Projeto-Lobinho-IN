@@ -225,26 +225,18 @@ main {
     text-align: right;
 }
 
-.mudar-pag {
-    display: flex;
-    gap: 10px
-}
-
-.voltar, .avançar {
+.paginacao button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
     background-color: #fff;
     border: none;
     font-size: 40px;
     font-weight: 600;
 }
-
-.voltar:hover, .avançar:hover {
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.mudar-pag p {
-    font-size: 30px;
-    margin-top: 15px;
+.paginacao button.desativado {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 /* RODAPÉ */
